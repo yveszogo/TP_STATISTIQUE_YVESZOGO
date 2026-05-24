@@ -180,8 +180,7 @@ def gauge_chart(prob):
 st.markdown("""
 <div class="nav-bar" style="margin-top:50px;">
   <div class="nav-inner">
-    <span class="nav-logo">Yves ZOGO : Prédiction du Lieu d'Accouchement</span>
-    <div class="nav-meta">EDS Cameroun 2018<br>N = 6 463 femmes</div>
+    <span class="nav-logo">Machine Learning : Prédiction du Lieu d'Accouchement - Yves ZOGO</span>
   </div>
 </div>
 """, unsafe_allow_html=True)
