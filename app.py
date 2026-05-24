@@ -434,15 +434,15 @@ def encode_features(age, residence, educ_femme, travail, bmi_cat,
 def get_risk_level(prob):
     """Retourne le niveau de risque et sa couleur."""
     if prob >= 0.80:
-        return "Très élevé", "#1E8449"
+        return "Très élevé", "#1E8449", "✅"
     elif prob >= 0.60:
-        return "Élevé", "#148F77"
+        return "Élevé", "#148F77", "✔"
     elif prob >= 0.40:
-        return "Modéré", "#D4AC0D"
+        return "Modéré", "#D4AC0D", "⚠"
     elif prob >= 0.20:
-        return "Faible", "#E67E22"
+        return "Faible", "#E67E22", "⚠"
     else:
-        return "Très faible", "#C0392B",
+        return "Très faible", "#C0392B", "⛔"
 
 
 def make_gauge(prob, title="Probabilité"):
